@@ -60,7 +60,7 @@ public class SecurityUtils {
   private String jwtAlgorithm;
 
   // Only used for testing the authservice itself.
-  @Inject @ConfigProperty(name = "DISABLE_CUSTOMER_VALIDATION", defaultValue = "false")
+  @Inject @ConfigProperty(name = "DISABLE_CUSTOMER_VALIDATION", defaultValue = "true")
   private boolean customerValidationDisabled;
 
   private PrivateKey privateKey;
